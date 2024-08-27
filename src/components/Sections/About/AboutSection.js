@@ -1,5 +1,7 @@
 import React from "react";
 import "./About.css";
+import image2 from "../../../assets/image2.jpg";
+import image4 from "../../../assets/image4.jpg";
 
 const About = () => {
   return (
@@ -14,14 +16,14 @@ const About = () => {
 
       <img
         className="about-image-bruchetta"
-        src={""}
+        src={image4}
         alt="Restarurant food"
         height={200}
         width={200}
       />
       <img
         className="about-image-restaurant"
-        src={""}
+        src={image2}
         alt="Restarurant food"
         height={200}
         width={200}

@@ -2,6 +2,7 @@ import React from "react";
 import "./Hero.css";
 import { useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
+import image1 from "../../../assets/image1.jpg";
 
 const Hero = () => {
   const navigate = useNavigate();
@@ -21,10 +22,9 @@ const Hero = () => {
           </p>
           <Button onClick={handleReservations} >Reserve a table</Button>
         </div>
-
         <img
           className="image"
-          src={""}
+          src={image1}
           alt="Restaurant"
           height={200}
           width={200}
