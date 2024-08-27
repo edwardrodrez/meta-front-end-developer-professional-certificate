@@ -1,10 +1,14 @@
 import React from 'react';
-
+import "./Footer.css"
 function Footer() {
   return (
-    <div>
-      Footer
-    </div>
+    <footer>
+      <div>
+        <img src='' width={200} height={100} />
+
+      </div>
+
+    </footer>
   );
 }
 

@@ -1,0 +1,9 @@
+footer {
+    background-color: #495e57;
+    padding: 1rem 1rem;
+}
+
+footer>div {
+    max-width: 65rem;
+    margin: 0 auto;
+}

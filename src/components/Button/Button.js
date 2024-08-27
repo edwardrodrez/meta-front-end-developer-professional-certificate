@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.css";
 
-const Button = ({ onClick, type, children }) => {
+const Button = ({ onClick, type = 'button', variant = 'solid', children }) => {
     const handleClick = (e) => {
         if (type !== 'submit') {
             e.preventDefault();
@@ -15,7 +15,7 @@ const Button = ({ onClick, type, children }) => {
     return (
         <button
             type={type}
-            className="button"
+            className={`button ${variant}`}
             onClick={handleClick}
         >
             {children}

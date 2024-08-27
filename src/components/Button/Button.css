@@ -1,0 +1,28 @@
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button.solid {
+    background-color: #495e57;
+    color: #fff;
+}
+
+.button.solid:hover {
+    background-color: #495e57;
+}
+
+.button.outline {
+    background-color: transparent;
+    color: #495e57;
+    border: 2px solid #495e57;
+}
+
+.button.outline:hover {
+    background-color: #495e57;
+    color: #fff;
+}
