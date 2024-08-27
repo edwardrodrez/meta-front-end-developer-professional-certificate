@@ -7,7 +7,7 @@ import AboutPage from './pages/About/AboutPage';
 
 function App() {
   return (
-    <div className=''>
+    <div>
       <Layout>
         <BrowserRouter>
           <Routes>
