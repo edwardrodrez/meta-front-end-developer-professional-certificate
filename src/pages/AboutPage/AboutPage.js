@@ -3,7 +3,7 @@ import About from '../../components/Sections/AboutSection/AboutSection';
 
 function AboutPage() {
   return (
-    <div className='container'>
+    <div data-testid="about-page" className='container'>
       <About />
     </div>
   );

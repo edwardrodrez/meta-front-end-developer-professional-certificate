@@ -6,11 +6,11 @@ import TestimonialsSection from '../../components/Sections/TestimonialsSection/T
 
 export default function HomePage() {
     return (
-        <>
+        <div data-testid="home-page" >
             <HeroSection />
             <SpecialsSection />
             <TestimonialsSection />
             <AboutSection />
-        </>
+        </div>
     )
 }

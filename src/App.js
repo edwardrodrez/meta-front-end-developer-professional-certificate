@@ -2,13 +2,13 @@
 import './App.css';
 import Layout from './layouts/Layout/Layout';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import HomePage from './pages/Home/HomePage';
+import HomePage from './pages/HomePage/HomePage';
 import AboutPage from './pages/AboutPage/AboutPage';
-import ReservationPage from './pages/Reservation/ReservationPage';
+import ReservationPage from './pages/ReservationPage/ReservationPage';
 
 function App() {
   return (
-    <div>
+    <div data-testid="app">
       <BrowserRouter>
         <Layout>
           <Routes>
