@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Input.css";
 
 const Input = ({ label, type = 'text', placeholder, value, onChange, error, name }) => {
   return (
@@ -10,6 +11,7 @@ const Input = ({ label, type = 'text', placeholder, value, onChange, error, name
         value={value}
         onChange={onChange}
         name={name}
+        id={name}
         style={{
           padding: '8px',
           fontSize: '16px',

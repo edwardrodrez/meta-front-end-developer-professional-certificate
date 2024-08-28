@@ -1,12 +1,12 @@
 .reservation-container {
-    padding: 3rem 0;
+    padding: 4.5rem 0;
     background-color: #495e57;
 }
 
 form {
     max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 1rem 2rem;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
@@ -14,5 +14,11 @@ form {
 
 h1 {
     margin-bottom: 20px;
-    color: #f4ce14;
+    color: #495e57;
+}
+
+.form-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }

@@ -1,7 +1,9 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useState } from 'react';
 import Input from '../../Input/Input';
 import './ReservationForm.css';
 import Button from '../../Button/Button';
+import { submitAPI } from '../../../utils/api';
+import Toast from '../../Toast/Toast';
 
 const initialState = {
   fullName: '',
@@ -34,6 +36,7 @@ function formReducer(state, action) {
 
 function ReservationForm() {
   const [state, dispatch] = useReducer(formReducer, initialState);
+  const [showNotification, setShowNotification] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -61,9 +64,12 @@ function ReservationForm() {
     }
 
     if (!hasErrors) {
-      // Submit form data
-      console.log('Form submitted:', state);
-      dispatch({ type: 'RESET_FORM' });
+      const response = submitAPI(state);
+      if (response) {
+        setShowNotification(true);
+        dispatch({ type: 'RESET_FORM' });
+      };
+
     }
   };
 
@@ -71,10 +77,14 @@ function ReservationForm() {
     dispatch({ type: 'SET_FIELD_VALUE', field: e.target.name, value: e.target.value });
   };
 
+  const handleCloseNotification = () => {
+    setShowNotification(false);
+  };
+
   return (
     <div className='reservation-container'>
-      <h1>New reservation</h1>
       <form onSubmit={handleSubmit}>
+        <h1>New reservation</h1>
         <Input
           label="Full name"
           name="fullName"
@@ -90,22 +100,24 @@ function ReservationForm() {
           onChange={handleChange}
           error={state.errors.email}
         />
-        <Input
-          label="Date"
-          name="date"
-          type="date"
-          value={state.date}
-          onChange={handleChange}
-          error={state.errors.date}
-        />
-        <Input
-          label="Time"
-          name="time"
-          type="time"
-          value={state.time}
-          onChange={handleChange}
-          error={state.errors.time}
-        />
+        <div className='form-group'>
+          <Input
+            label="Date"
+            name="date"
+            type="date"
+            value={state.date}
+            onChange={handleChange}
+            error={state.errors.date}
+          />
+          <Input
+            label="Time"
+            name="time"
+            type="time"
+            value={state.time}
+            onChange={handleChange}
+            error={state.errors.time}
+          />
+        </div>
         <Input
           label="Number of guests"
           name="guests"
@@ -116,6 +128,13 @@ function ReservationForm() {
         />
         <Button type="submit">Submit</Button>
       </form>
+      {showNotification && (
+        <Toast
+          message={`All set! Your reservation for ${state.fullName} has been successfully confirmed for ${state.date} at ${state.time}.`}
+          onClose={handleCloseNotification}
+        />
+      )}
+
     </div>
   );
 }
