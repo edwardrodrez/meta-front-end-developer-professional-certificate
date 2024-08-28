@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Input = ({ label, type = 'text', placeholder, value, onChange, error }) => {
+const Input = ({ label, type = 'text', placeholder, value, onChange, error, name }) => {
   return (
     <div style={{ margin: '10px 0' }}>
       <label style={{ display: 'block', marginBottom: '5px' }}>{label}</label>
@@ -9,6 +9,7 @@ const Input = ({ label, type = 'text', placeholder, value, onChange, error }) =>
         placeholder={placeholder}
         value={value}
         onChange={onChange}
+        name={name}
         style={{
           padding: '8px',
           fontSize: '16px',

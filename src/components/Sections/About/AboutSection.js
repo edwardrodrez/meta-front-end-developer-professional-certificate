@@ -3,7 +3,7 @@ import "./About.css";
 import image2 from "../../../assets/image2.jpg";
 import image4 from "../../../assets/image4.jpg";
 
-const About = () => {
+const AboutSection = () => {
   return (
     <div className="about">
       <div>
@@ -32,4 +32,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default AboutSection;

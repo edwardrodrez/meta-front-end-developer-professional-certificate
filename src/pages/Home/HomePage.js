@@ -1,9 +1,16 @@
 import React from 'react'
-import Hero from '../../components/Sections/Hero/HeroSection'
-import About from '../../components/Sections/About/AboutSection'
+import HeroSection from '../../components/Sections/Hero/HeroSection'
+import AboutSection from '../../components/Sections/About/AboutSection'
+import SpecialsSection from '../../components/Sections/Specials/SpecialsSection'
+import TestimonialsSection from '../../components/Sections/Testimonials/TestimonialsSection'
 
 export default function HomePage() {
     return (
-        <><Hero /><About /></>
+        <>
+            <HeroSection />
+            <SpecialsSection />
+            <TestimonialsSection />
+            <AboutSection />
+        </>
     )
 }

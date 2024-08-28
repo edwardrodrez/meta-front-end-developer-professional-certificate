@@ -6,7 +6,7 @@
 
 .footer-container {
     display: grid;
-    padding: 2rem 0;
+    padding: 5rem 0;
     max-width: 65rem;
     margin: 0 auto;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -50,18 +50,7 @@
 }
 
 .footer-item:hover {
-    animation-name: colorChange;
-    animation-duration: 1s;
-}
-
-@keyframes colorChange {
-    0% {
-        color: white;
-    }
-
-    100% {
-        color: #f4ce14;
-    }
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 767px) {
@@ -117,11 +106,6 @@
         text-decoration: none;
         color: white;
         display: flex;
-    }
-
-    .footer-item:hover {
-        animation-name: colorChange;
-        animation-duration: 1s;
     }
 
     @keyframes colorChange {

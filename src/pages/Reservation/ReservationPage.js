@@ -1,11 +1,9 @@
 import React from 'react';
-import ReservationForm from '../../components/Forms/ReservationForm';
+import ReservationForm from '../../components/Forms/ReservationForm/ReservationForm';
 
 function ReservationPage() {
   return (
-    <div className='container'>
-      <ReservationForm />
-    </div>
+    <ReservationForm />
   );
 }
 

@@ -72,7 +72,7 @@ function ReservationForm() {
   };
 
   return (
-    <>
+    <div className='reservation-container'>
       <h1>New reservation</h1>
       <form onSubmit={handleSubmit}>
         <Input
@@ -116,7 +116,7 @@ function ReservationForm() {
         />
         <Button type="submit">Submit</Button>
       </form>
-    </>
+    </div>
   );
 }
 

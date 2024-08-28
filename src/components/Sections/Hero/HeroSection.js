@@ -4,11 +4,11 @@ import { useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
 import image1 from "../../../assets/image1.jpg";
 
-const Hero = () => {
+const HeroSection = () => {
   const navigate = useNavigate();
 
   const handleReservations = () => {
-    navigate("/reservation");
+    navigate("/reservations");
   }
 
   return (
@@ -34,4 +34,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default HeroSection;
