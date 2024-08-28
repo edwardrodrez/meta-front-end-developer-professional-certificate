@@ -18,6 +18,9 @@ const fetchAPI = (date) => {
     return result;
 };
 
-const submitAPI = (formData) => true;
+const submitAPI = (data) => {
+    console.log(data)
+    return true
+};
 
 export { fetchAPI, submitAPI };

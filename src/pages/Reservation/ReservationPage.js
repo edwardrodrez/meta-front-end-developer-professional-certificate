@@ -1,6 +1,6 @@
 import React from 'react';
 import ReservationForm from '../../components/Forms/ReservationForm/ReservationForm';
-import AboutPage from '../About/AboutPage';
+import AboutPage from '../AboutPage/AboutPage';
 
 function ReservationPage() {
   return (

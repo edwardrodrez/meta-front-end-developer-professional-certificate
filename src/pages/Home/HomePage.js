@@ -1,8 +1,8 @@
 import React from 'react'
-import HeroSection from '../../components/Sections/Hero/HeroSection'
-import AboutSection from '../../components/Sections/About/AboutSection'
-import SpecialsSection from '../../components/Sections/Specials/SpecialsSection'
-import TestimonialsSection from '../../components/Sections/Testimonials/TestimonialsSection'
+import HeroSection from '../../components/Sections/HeroSection/HeroSection'
+import AboutSection from '../../components/Sections/AboutSection/AboutSection'
+import SpecialsSection from '../../components/Sections/SpecialsSection/SpecialsSection'
+import TestimonialsSection from '../../components/Sections/TestimonialsSection/TestimonialsSection'
 
 export default function HomePage() {
     return (

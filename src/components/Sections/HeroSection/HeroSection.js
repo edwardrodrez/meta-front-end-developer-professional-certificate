@@ -1,5 +1,5 @@
 import React from "react";
-import "./Hero.css";
+import "./HeroSection.css";
 import { useNavigate } from "react-router-dom";
 import Button from "../../Button/Button";
 import image1 from "../../../assets/image1.jpg";
