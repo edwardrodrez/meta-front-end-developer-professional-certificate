@@ -2,7 +2,7 @@ import React from 'react';
 import ReservationForm from '../../components/Forms/ReservationForm/ReservationForm';
 import AboutPage from '../AboutPage/AboutPage';
 
-function ReservationPage() {
+export default function ReservationPage() {
   return (
     <div data-testid="reservation-page" >
       <ReservationForm />
@@ -11,4 +11,3 @@ function ReservationPage() {
   );
 }
 
-export default ReservationPage;

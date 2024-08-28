@@ -34,7 +34,7 @@ function formReducer(state, action) {
   }
 }
 
-function ReservationForm() {
+const ReservationForm = () => {
   const [state, dispatch] = useReducer(formReducer, initialState);
   const [showNotification, setShowNotification] = useState(false);
 

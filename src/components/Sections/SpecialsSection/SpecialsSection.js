@@ -38,7 +38,7 @@ const SpecialsSection = () => {
   const navigate = useNavigate();
 
   const handleMenu = () => {
-    navigate("");
+    navigate("/");
   };
   return (
     <div className="specials">

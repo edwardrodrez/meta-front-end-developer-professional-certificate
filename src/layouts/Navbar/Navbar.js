@@ -7,7 +7,7 @@ import logo from "../../assets/Logo.svg"
 import NavItem from './NavItem'
 
 
-export default function Navbar() {
+const Navbar = () => {
     const navigate = useNavigate();
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,3 +54,5 @@ export default function Navbar() {
 
     )
 }
+
+export default Navbar
