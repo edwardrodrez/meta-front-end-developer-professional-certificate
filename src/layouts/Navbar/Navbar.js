@@ -1,13 +1,13 @@
 
 
 import React, { useState } from 'react'
-import "./Nav.css"
+import "./Navbar.css"
 import { useLocation, useNavigate } from 'react-router-dom';
 import logo from "../../assets/Logo.svg"
 import NavItem from './NavItem'
 
 
-export default function Nav() {
+export default function Navbar() {
     const navigate = useNavigate();
     const location = useLocation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Nav() {
         setIsMenuOpen(!isMenuOpen);
     };
 
-    const onClickImage = () => {
+    const handleLogo = () => {
         navigate("/");
     };
 
@@ -32,10 +32,10 @@ export default function Nav() {
     return (
         <header>
             <div className="logo">
-                <img src={logo} alt="logo" height={50} onClick={onClickImage} />
+                <img src={logo} alt="logo" height={50} onClick={handleLogo} />
             </div>
             <nav className={`nav ${isMenuOpen ? "open" : ""}`}>
-                <ul className={`menu-list ${isMenuOpen ? "open" : ""}`}>
+                <ul className={`menu-wrap ${isMenuOpen ? "open" : ""}`}>
                     {menuItems.map(item => (
                         <li key={item.id} className={location.pathname === item.link ? "active" : ""}>
                             <NavItem href={item.link}>{item.label}</NavItem>

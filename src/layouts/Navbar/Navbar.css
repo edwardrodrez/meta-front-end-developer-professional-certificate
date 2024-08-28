@@ -81,25 +81,13 @@ ul li.active a {
     transform: translateY(-8px) rotate(-45deg);
 }
 
-@media screen and (max-width: 767px) {
-    header {
-        justify-content: space-between;
-        background-color: white;
-        padding: 1rem 1rem;
-        display: flex;
-        align-items: center;
-        height: 4rem;
-        width: -webkit-fill-available;
-        margin: 0 auto;
-        position: fixed;
-        margin-bottom: 96px;
-    }
+@media screen and (max-width: 1000px) {
 
     .menu-toggle {
         display: block;
     }
 
-    .menu-list {
+    .menu-wrap {
         position: fixed;
         top: 4rem;
         left: 0;
@@ -109,7 +97,7 @@ ul li.active a {
         display: none;
     }
 
-    .nav.open .menu-list {
+    .nav.open .menu-wrap {
         display: flex;
         flex-direction: column;
         gap: 20px;

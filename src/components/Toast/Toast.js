@@ -15,7 +15,7 @@ const Toast = ({ message, onClose }) => {
     if (!visible) return null;
 
     return (
-        <div className="notification">
+        <div className="toast">
             <p>{message}</p>
             <button className="close-button" onClick={onClose}>
                 &times;

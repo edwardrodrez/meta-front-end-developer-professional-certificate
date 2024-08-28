@@ -126,11 +126,13 @@ function ReservationForm() {
           onChange={handleChange}
           error={state.errors.guests}
         />
-        <Button type="submit">Submit</Button>
+        <div className='form-footer'>
+          <Button type="submit">Book a table</Button>
+        </div>
       </form>
       {showNotification && (
         <Toast
-          message={`All set! Your reservation for ${state.fullName} has been successfully confirmed for ${state.date} at ${state.time}.`}
+          message={`All set! Your reservation has been successfully confirmed.`}
           onClose={handleCloseNotification}
         />
       )}

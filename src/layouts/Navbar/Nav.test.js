@@ -2,12 +2,12 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import '@testing-library/jest-dom/extend-expect';
-import Nav from './Nav';
+import Navbar from './Navbar';
 
 test('it renders the Navbar component correctly', () => {
     render(
         <BrowserRouter>
-            <Nav />
+            <Navbar />
         </BrowserRouter>
     );
 
