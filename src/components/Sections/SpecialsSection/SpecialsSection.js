@@ -42,12 +42,12 @@ const SpecialsSection = () => {
   };
   return (
     <div className="specials">
-      <div className="header-container">
+      <div className="specials-container">
         <h1 className="specials-title">Specials</h1>
         <Button onClick={handleMenu} >Online Menu</Button>
       </div>
 
-      <div className="header-list">
+      <div className="specials-list">
         {specials.map((special) => (
           <SpecialCard
             key={special.id}

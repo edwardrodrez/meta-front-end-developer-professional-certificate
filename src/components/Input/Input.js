@@ -3,8 +3,8 @@ import "./Input.css";
 
 const Input = ({ label, type = 'text', placeholder, value, onChange, error, name }) => {
   return (
-    <div style={{ margin: '10px 0' }}>
-      <label style={{ display: 'block', marginBottom: '5px' }}>{label}</label>
+    <div className="input-container">
+      <label htmlFor={name} className="input-label">{label}</label>
       <input
         type={type}
         placeholder={placeholder}
@@ -12,16 +12,10 @@ const Input = ({ label, type = 'text', placeholder, value, onChange, error, name
         onChange={onChange}
         name={name}
         id={name}
-        style={{
-          padding: '8px',
-          fontSize: '16px',
-          borderRadius: '4px',
-          border: `1px solid ${error ? 'red' : '#ccc'}`,
-          width: '100%',
-        }}
+        className={`input-field ${error ? 'error' : ''}`}
       />
       {error && (
-        <div style={{ color: 'red', marginTop: '5px', fontSize: '14px' }}>
+        <div className="input-error">
           {error}
         </div>
       )}

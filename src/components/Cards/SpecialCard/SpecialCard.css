@@ -1,4 +1,4 @@
-.food-card {
+.special-card {
     background: #f2f4f3;
     border: 1px solid rgb(237, 236, 236);
     border-radius: 16px;
@@ -11,60 +11,60 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.food-card:hover {
+.special-card:hover {
     transform: scale(1.05);
 }
 
-.food-card-image {
+.special-card-image {
     width: 100%;
 }
 
-.food-card-title {
+.special-card-title {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
     color: black;
 }
 
-.food-card-description {
+.special-card-description {
     font-size: 16px;
     font-weight: 400;
     margin: 0;
     color: #495E57;
 }
 
-.food-card-price {
+.special-card-price {
     font-size: 20px;
     font-weight: 600;
     margin: 0;
     color: #ee9972;
 }
 
-.food-card-body {
+.special-card-body {
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.food-card-body-header {
+.special-card-body-header {
     flex-grow: 1;
 }
 
-.food-card-body-title-header {
+.special-card-body-title-header {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     margin-bottom: 1rem;
 }
 
-.food-card-delivery {
+.special-card-delivery {
     display: flex;
     align-items: center;
     margin-top: 1rem;
 }
 
-.food-card-delivery-title {
+.special-card-delivery-title {
     font-size: 16px;
     font-weight: 600;
     margin: 0 0.5rem 0 0;
@@ -72,7 +72,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .food-card {
+    .special-card {
         background: #edefee;
         border-radius: 16px;
         height: 100%;

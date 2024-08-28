@@ -19,7 +19,6 @@ const TestimonialCard = ({ author, description, image, rating }) => {
     return (
         <div className="testimonial-card" data-testid="testimonial-card">
             <div className="testimonial-rating">{renderStars()}</div>
-
             <div className="testimonial-card-container">
                 <img className="testimonial-profile-picture" src={image} alt="author" height={50}></img>
                 <p className="testimonial-card-author">{author}</p>
